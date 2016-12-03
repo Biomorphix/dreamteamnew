@@ -1,0 +1,14 @@
+.main {
+    position: relative;
+    top: 100px;
+    left: 25%;
+}
+
+.main_input {
+    width: 400px;
+
+}
+
+.death_blank {
+    width: 400px;
+}
