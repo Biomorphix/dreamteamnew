@@ -28,7 +28,12 @@ myApp.config(function($stateProvider) {
     var guide_profileState = {
         name: 'guide_profile',
         url: '/guide_profile',
-        template: '<h3>guide_profile</h3>',
+        template:
+        '<img class="bi_photo" ng-swipe-right="skip()" ng-swipe-left="choose(data[counter].gi_title)" src={{data[counter].gi_photo}}> ' +
+        '<h3 class="bi_title" ng-bind=data[counter].gi_title></h3>' +
+        ' <p class="bi_desc" ng-bind=data[counter].gi_desc>>' +
+        '<ul>' +
+        '<li ng-repeat="price in data[counter].prising">{{price.text}} | {{price.cost}}</li></ul>',
         controller: 'guide_profile'
     };
 
