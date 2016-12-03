@@ -7,9 +7,11 @@ angular.module('app')
         };
 
         $scope.authorize = function (to) {
+            
             if(to == 'guide') {
                 $state.go('guide')
             } else {
+                console.log(to)
                 $state.go('wish');
             }
         }
