@@ -1,14 +1,67 @@
-.main {
-    position: relative;
-    top: 100px;
-    left: 25%;
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(fonts/RobotoRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: Montserrat; /* Имя шрифта */
+    src: url(fonts/Montserrat-Regular.otf); /* Путь к файлу со шрифтом */
+   }
+
+html, body{
+	margin: 0;
+	padding: 0;
+	background-image: url(img/bg.png);
+	width: 100%;
+	height: 100%;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+a{
+	color: #000;
+	text-decoration: none;
+	border: 1px dotted rgba(0,0,0,0.2);
+}
+a:hover{
+	text-decoration: none;
+}
+h1{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 50px;
+}
+h2{
+	padding: 20px;
+	text-align: center;
+	margin: 0;
+	font-size: 20px;
+}
+.text-h{
+	margin-top: 100px;
 }
 
-.main_input {
-    width: 400px;
 
+.continue{
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	font-size: 30px;
+	text-align: center;
 }
-
-.death_blank {
-    width: 400px;
+.ch-btns{
+	text-align: center;
+}
+.ch-btns a{
+	margin: 6px;
+	padding: 14px;
+	font-size: 18px;
+	display: block;
+	height: 50px;
+	background-color: transparent;	
+}
+.ch-btns a:hover{
+	transition: all 0.3s ease-in-out;
+	color: #000;
+	background-color: rgba(0,0,0,0.2);
 }

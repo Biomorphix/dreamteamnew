@@ -26,12 +26,9 @@ angular.module('app')
         $scope.counter = 0;
 
         $scope.add = function () {
-            $scope.user.bi_count += 1;
-            if($scope.user.bi_count == 5) {
-                $state.go('guide_profile');
-            } else {
-                next();
-            }
+            console.log('add');
+            
+            next();
         };
 
         $scope.skip = function () {
