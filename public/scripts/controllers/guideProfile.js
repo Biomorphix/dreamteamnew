@@ -1,33 +1,37 @@
 angular.module('app')
     .controller('guide_profile', ["$scope", "$state", "$http", function ($scope, $state, $http) {
         $scope.data = [{
-            gi_photo: "./img/photo.png",
-            gi_title: "gi_title",
-            gi_desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis consequuntur dolorem dolores dolorum ducimus, et eum exercitationem hic, iusto laboriosam molestias obcaecati porro possimus quaerat quia quisquam temporibus unde!",
-            bi: ["extrim", "diving", "downshifting"],
+            gi_photo: "./pic_gi/2.jpg",
+            gi_title: "Anatoliy",
+            gi_desc: "Anatoliy is experienced sportsman.",
+            bi: ["Mountain biking", "Rafting", "Alpinism"],
             prising: [
                 {
-                    text: "I will show u new lands",
-                    cost: 100
+                    text: "Mountain biking",
+                    cost: 50
                 },
                 {
-                    text: "Go with me in the deep",
-                    cost: 10
+                    text: "Rafting",
+                    cost: 80
+                },
+                {
+                    text: "Alpinism",
+                    cost: 100
                 }
             ]
         },{
-            gi_photo: "./img/photo.png",
-            gi_title: "gi_title 111",
-            gi_desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis consequuntur dolorem dolores dolorum ducimus, et eum exercitationem hic, iusto laboriosam molestias obcaecati porro possimus quaerat quia quisquam temporibus unde!",
-            bi: ["extrim", "diving", "downshifting"],
+            gi_photo: "./img/3.jpg",
+            gi_title: "Azalia",
+            gi_desc: "Azalia know everything about Kyrgyz traditions!",
+            bi: ["National drinks", "Yurt camp"],
             prising: [
                 {
-                    text: "I will show u new lands 11",
-                    cost: 100
+                    text: "National drikns",
+                    cost: 50
                 },
                 {
-                    text: "Go with me in the deep 111s",
-                    cost: 10
+                    text: "Yurt camping",
+                    cost: 200
                 }
             ]
         }];
