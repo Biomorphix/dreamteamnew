@@ -9,15 +9,30 @@ var tmap = {
                 <div class="mdl-card--expand">
                 <img class="bi_photo" height="360px" ng-swipe-right="skip()" ng-swipe-left="add(data[counter].bi_title)" src={{data[counter].bi_photo}}>
                 <h2 class="mdl-card__title-text" ng-bind=data[counter].bi_title></h2>
-                </div>
-        
-                <div class="mdl-card__supporting-text mdl-card__supporting-wish" ng-bind=data[counter].bi_desc>
+                 <div class="desc" ng-bind=data[counter].bi_desc>
                      </div>
-            <div class="mdl-card__actions mdl-card--border">
-                <input class="mdl-slider mdl-js-slider isUpgraded is-upgraded" type="range"
-                 min="0" max="100" value="0" tabindex="0" id="statusBar">
-            </a>
-            </div>
+                 <button class="skip mdl-button mdl-js-button mdl-button--raised">
+                      Skip
+                    </button>
+                    <button class="like mdl-button mdl-js-button mdl-button--raised">
+                      Like!
+                    </button>  
+                 <div id="p1" class="mdl-progress mdl-js-progress"></div>
+
+                </div>
+
+        
+               
+
+                 
+            
+               
+                <script>
+                  document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
+                    this.MaterialProgress.setProgress(44);
+                  });
+                </script>
+          
             </div>`,
     guideProfile: `<div class="demo-card-square mdl-card mdl-shadow--2dp">
         <div class="mdl-card--expand">

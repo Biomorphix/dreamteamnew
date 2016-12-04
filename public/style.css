@@ -10,9 +10,9 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	background-image: url(/img/bg.png);
+	background-color: #fff;
 	width: 100%;
-	height: 100%;
+	height: 628px;
 	color: #000;
 	font-family: 'Roboto', sans-serif;
 }
@@ -37,52 +37,19 @@ h2{
 	margin: 0;
 	font-size: 20px;
 }
-.text-h{
-	margin-top: 50px;
-}
-
-
-.continue{
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	font-size: 30px;
-	text-align: center;
-}
-.ch-btns{
-	text-align: center;
-}
-.ch-btns a{
-	margin: 6px;
-	padding: 14px;
-	font-size: 18px;
-	display: block;
-	height: 50px;
-	background: #AEEA00;
-	/*background-color: transparent;	*/
-}
-.ch-btns a:hover{
-	transition: all 0.3s ease-in-out;
-	color: #000;
-	background-color: rgba(0,0,0,0.2);
-}
 
 .demo-card-square {
 	width: 100%;
-	height: 100%;
 }
 
 
 .mdl-card__title-text {
-	position: relative;
-	float: left;
+	/*position: relative;*/
+	
 }
 
 
-.mdl-card__supporting-wish{
-	position: relative;
-	bottom: 60px;
-}
+
 
 .mdl-dialog {
 	width: 100%;
@@ -107,8 +74,44 @@ h2{
 	width: 100%;
 	height: 100%;
 }
+.desc{
+	margin-left: 20px;
+	color: #333;
+	margin-bottom: 20px;
+}
+.mdl-card--expand{
+	margin-bottom: 0;
+}
 
 .demo-card-square {
     box-shadow: none!important;
     border: none!important;
+    height: 100%;
+}
+.mdl-progress{
+	position: absolute;
+	bottom: 0px;
+}
+.skip{
+	margin-left: 50px;
+	width: 100px;
+	color: #fff;
+	background-color: red!important;
+}
+.like{
+	float: right;
+	margin-right: 50px;
+	width: 100px;
+	color: #fff;
+	background-color: green!important;
+}
+
+/*/////////////////////////GUIDE//////////////////////////////*/
+
+
+.demo-list-action {
+  width: 300px;
+}
+.active-shit{
+  border-bottom: solid 2px red;
 }
