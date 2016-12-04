@@ -31,18 +31,23 @@ var tmap = {
         <div class="mdl-card--expand">
         <img class="bi_photo" height="360px" ng-swipe-right="skip()" ng-swipe-left="choose(data[counter].gi_title)" src={{data[counter].gi_photo}}>
         <h2 class="mdl-card__title-text" ng-bind=data[counter].gi_title></h2>
-        </div>
 
-        <div class="mdl-card__supporting-text" ng-bind=data[counter].gi_desc>
+        <div class="ico-star"></div><p class="rait">&nbsp31</p>
+          
+           <div class="mdl-card__supporting-text" ng-bind=data[counter].gi_desc>
              </div>
              
-         <ul class="demo-list-icon mdl-list">
-          <li class="mdl-list__item" ng-repeat="price in data[counter].prising">
-            <span class="mdl-list__item-primary-content">
+               <ul class="demo-list-icon mdl-list">
+                <li class="mdl-list__item" ng-repeat="price in data[counter].prising">
+                  <span class="mdl-list__item-primary-content">
+                      {{price.text}} |  {{price.cost}}$
+                  </span>
+         </ul>
 
-            {{price.text}} |  {{price.cost}}$
-        </span>
-         </ul>',
+        </div>
+
+
+       
          
          
     <dialog class="mdl-dialog">

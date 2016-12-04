@@ -88,9 +88,13 @@ h2{
     border: none!important;
     height: 100%;
 }
-.mdl-progress{
-	position: absolute;
-	bottom: 0px;
+#progressbar {
+	position: relative;
+	top: 11px;
+}
+
+.ui-progressbar-value {
+	background: #3949AB;
 }
 .skip{
 	margin-left: 50px;
@@ -108,14 +112,40 @@ h2{
 
 /*/////////////////////////GUIDE//////////////////////////////*/
 
-
+h2{
+	display: inline-block;
+	float: left;
+}
+.ico-star{
+	width: 24px;
+	height: 24px;
+	background-image: url(/star.png);
+	display: inline-block;
+	float: left;
+	margin-top: 21px;
+	margin-left: 213px;
+}
+.rait{
+	font-size: 20px;
+	margin-top: 21px;
+}
 .demo-list-action {
   width: 300px;
 }
 .active-shit{
-  border-bottom: solid 2px red;
+ 	border-bottom: solid 2px red;
 }
 
+.mdl-card__supporting-text{
+	padding-top: 0px;
+}
+.demo-list-icon{
+	padding: 0;
+	margin: 0;
+}
+.mdl-list__item{
+
+}
 
 .await {
     width: 135px;
@@ -124,10 +154,4 @@ h2{
     float: right;
 }
 
-#progressbar {
-	
-}
 
-.ui-progressbar-value {
-	background: #3949AB;
-}
