@@ -3,9 +3,12 @@ var myApp = angular.module('app', ['ui.router', 'ngTouch'])
         $scope.goToActive = function () {
             $state.go('currentProccess');
         }
+
     });
 
 myApp.config(function($stateProvider) {
+
+
 
     // var loginState = {
     //     name: 'login',

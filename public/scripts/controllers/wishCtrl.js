@@ -45,6 +45,16 @@ angular.module('app')
             bi_array: []
         };
 
+        $(function(){
+            var options =  {
+                content: "Choose your desires", // text of the snackbar
+                style: "toast", // add a custom class to your snackbar
+                timeout: 2000 // time in milliseconds after the snackbar autohides, 0 is disabled
+            };
+
+            $.snackbar(options);
+        });
+
         $scope.counter = 0;
 
         $scope.add = function () {
