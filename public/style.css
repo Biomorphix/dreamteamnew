@@ -1,16 +1,16 @@
 @font-face {
     font-family: Roboto; /* Имя шрифта */
-    src: url(fonts/RobotoRegular.ttf); /* Путь к файлу со шрифтом */
+    src: url(/fonts/RobotoRegular.ttf); /* Путь к файлу со шрифтом */
    }
 @font-face {
     font-family: Montserrat; /* Имя шрифта */
-    src: url(fonts/Montserrat-Regular.otf); /* Путь к файлу со шрифтом */
+    src: url(/fonts/Montserrat-Regular.otf); /* Путь к файлу со шрифтом */
    }
 
 html, body{
 	margin: 0;
 	padding: 0;
-	background-image: url(img/bg.png);
+	background-image: url(/img/bg.png);
 	width: 100%;
 	height: 100%;
 	color: #000;
@@ -38,13 +38,13 @@ h2{
 	font-size: 20px;
 }
 .text-h{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 
 .continue{
 	font-family: 'Montserrat', sans-serif;
-	margin-top: 60px;
+	margin-top: 20px;
 	margin-bottom: 30px;
 	font-size: 30px;
 	text-align: center;
@@ -58,10 +58,52 @@ h2{
 	font-size: 18px;
 	display: block;
 	height: 50px;
-	background-color: transparent;	
+	background: #AEEA00;
+	/*background-color: transparent;	*/
 }
 .ch-btns a:hover{
 	transition: all 0.3s ease-in-out;
 	color: #000;
 	background-color: rgba(0,0,0,0.2);
+}
+
+.demo-card-square {
+	width: 100%;
+	height: 100%;
+}
+
+
+.mdl-card__title-text {
+	position: relative;
+	float: left;
+}
+
+
+.mdl-card__supporting-wish{
+	position: relative;
+	bottom: 60px;
+}
+
+.mdl-dialog {
+	width: 100%;
+}
+
+.mdl-button--icon {
+	color: #ffffff;
+}
+
+.top-bar {
+	width: 100%;
+	background: #3949AB;
+}
+
+.button-top {
+	text-decoration: none;
+	float: right;
+	color: #ffffff;
+}
+
+.procc_table {
+	width: 100%;
+	height: 100%;
 }
