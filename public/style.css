@@ -1,10 +1,10 @@
 @font-face {
     font-family: Roboto; /* Имя шрифта */
-    src: url(/fonts/RobotoRegular.ttf); /* Путь к файлу со шрифтом */
+    src: url(/public/fonts/RobotoRegular.ttf); /* Путь к файлу со шрифтом */
    }
 @font-face {
     font-family: Montserrat; /* Имя шрифта */
-    src: url(/fonts/Montserrat-Regular.otf); /* Путь к файлу со шрифтом */
+    src: url(/public/fonts/Montserrat-Regular.otf); /* Путь к файлу со шрифтом */
    }
 
 html, body{
