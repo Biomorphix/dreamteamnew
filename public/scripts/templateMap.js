@@ -5,7 +5,12 @@ var tmap = {
     //         '<h3 class="bi_title" ng-bind=data[counter].bi_title></h3>' +
     //         ' <p class="bi_desc" ng-bind=data[counter].bi_desc>' +
     //         '</p><div class="bi_statusBar">{{user.bi_count}} / 5</div>',
-    wish: `<div class="demo-card-square mdl-card mdl-shadow--2dp">
+    wish: `
+            <div class="mdl-tooltip mdl-tooltip--large" id="tooltip">
+                 Toool!
+            </div>
+            
+            <div class="demo-card-square mdl-card mdl-shadow--2dp">
                 <div class="mdl-card--expand">
                 <img class="bi_photo" height="360px" ng-swipe-right="skip()" ng-swipe-left="add(data[counter].bi_title)" src={{data[counter].bi_photo}}>
                 <h2 class="mdl-card__title-text" ng-bind=data[counter].bi_title></h2>
@@ -63,23 +68,18 @@ var tmap = {
 .demo-list-action {
   width: 300px;
 }
-.active-shit{
-  border-bottom: solid 2px red;
-}
+
 </style>
 
 <div class="demo-card-square mdl-card mdl-shadow--2dp" style="height:auto; margin:0 auto;">
   <div class="demo-list-action mdl-list">
     <h4 style="text-align:center;">Current Process</h4>
-    <div class="mdl-list__item active-shit">
+    <div class="mdl-list__item">
       <span class="mdl-list__item-primary-content">
         <span>Hiking in Ala-Archa</span>
       </span>
       <span class="mdl-list__item-secondary-content">
         <span>$30</span>
-        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-        </label>
       </span>
     </div>
     <div class="mdl-list__item">
@@ -88,9 +88,6 @@ var tmap = {
       </span>
       <span class="mdl-list__item-secondary-content">
         <span>$20</span>
-        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-          <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" disabled="true">
-        </label>
       </span>
     </div>
     <div class="mdl-list__item">
@@ -99,9 +96,6 @@ var tmap = {
       </span>
       <span class="mdl-list__item-secondary-content">
       <span>$10</span>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
-        <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" disabled="true">
-      </label>
     </span>
     </div>
   </div>
@@ -137,7 +131,76 @@ var tmap = {
         '            <a ng-click=authorize(buttons.traveller)>GUIDE</a>            </div>            <div class="col-xs-10 col-xs-offset-1 tourist">         ' +
         '       <a ng-click=authorize(buttons.traveller)>TOURIST</a>            </div>        </div>    </div>',
     currentProccess: `
-       
+            <style>
+.demo-list-two {
+  width: 300px;
+
+}
+
+  .cont {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+  }
+</style>
+<div class="cont">
+
+    <!-- Square card -->
+<style>
+.demo-card-square.mdl-card {
+  width: 100%;
+  height: 100%;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}
+</style>
+
+<div class="demo-card-square mdl-card mdl-shadow--2dp">
+  <div class="mdl-card--title">
+    <h2 class="mdl-card__title-text">Guide: Aziz</h2>
+    <snap class="await">Waiting for accept</snap>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenan convallis.
+  </div>
+  <div class="demo-card-square mdl-card mdl-shadow--2dp" style="height:auto; margin:0 auto;">
+  <div class="demo-list-action mdl-list">
+    <div class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        <span>Hiking in Ala-Archa</span>
+      </span>
+      <span class="mdl-list__item-secondary-content">
+        <span>$30</span>
+      </span>
+    </div>
+    <div class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        <span>Mountin Biking</span>
+      </span>
+      <span class="mdl-list__item-secondary-content">
+        <span>$20</span>
+      </span>
+    </div>
+    <div class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        <span>Museums in Bishkek</span>
+      </span>
+      <span class="mdl-list__item-secondary-content">
+      <span>$10</span>
+    </span>
+    </div>
+  </div>
+
+</div>
+  <div class="mdl-card__actions mdl-card--border">
+    <h4>Contacts</h4>
+    <h5>Phone: 0550214210</h5>
+  </div>
+</div>
+
+</div>
     `
 };
 

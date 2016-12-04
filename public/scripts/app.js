@@ -1,7 +1,9 @@
 var myApp = angular.module('app', ['ui.router', 'ngTouch'])
-    // .controller('apppp', function ($scope, $state) {
-    //
-    // });
+    .controller('glob', function ($scope, $state) {
+        $scope.goToActive = function () {
+            $state.go('currentProccess');
+        }
+    });
 
 myApp.config(function($stateProvider) {
 

@@ -115,3 +115,12 @@ h2{
 .active-shit{
   border-bottom: solid 2px red;
 }
+
+
+.await {
+    width: 135px;
+    height: 30px;
+    background-color: deepskyblue;
+    float: right;
+}
+
