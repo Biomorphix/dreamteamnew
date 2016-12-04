@@ -36,7 +36,24 @@ angular.module('app')
             ]
         }];
 
+        $(function(){
+            var options =  {
+                content: "Choose guide", // text of the snackbar
+                style: "toast", // add a custom class to your snackbar
+                timeout: 2000 // time in milliseconds after the snackbar autohides, 0 is disabled
+            };
+
+            $.snackbar(options);
+        });
+
         $scope.choose = function () {
+            var options =  {
+                content: "This prise is ok?", // text of the snackbar
+                style: "toast", // add a custom class to your snackbar
+                timeout: 2000 // time in milliseconds after the snackbar autohides, 0 is disabled
+            };
+
+            $.snackbar(options);
             var dialog = document.querySelector('dialog');
             console.log(dialog)
             dialog.showModal();

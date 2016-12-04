@@ -6,9 +6,7 @@ var tmap = {
     //         ' <p class="bi_desc" ng-bind=data[counter].bi_desc>' +
     //         '</p><div class="bi_statusBar">{{user.bi_count}} / 5</div>',
     wish: `
-            <div class="mdl-tooltip mdl-tooltip--large" id="tooltip">
-                 Toool!
-            </div>
+            <span data-toggle="snackbar" id="snck" data-content="Please chose your desires!"></span>
             
             <div class="demo-card-square mdl-card mdl-shadow--2dp">
                 <div class="mdl-card--expand">
@@ -98,24 +96,9 @@ var tmap = {
         </div>
 </div>
 
-<!--</div>-->
-            <!--&lt;!&ndash;<ul class="demo-list-icon mdl-list">&ndash;&gt;-->
-          <!--&lt;!&ndash;<li class="mdl-list__item" ng-repeat="price in data[counter].prising">&ndash;&gt;-->
-            <!--&lt;!&ndash;<span class="mdl-list__item-primary-content">&ndash;&gt;-->
-
-            <!--&lt;!&ndash;{{price.text}} |  {{price.cost}}$&ndash;&gt;-->
-        <!--&lt;!&ndash;</span>&ndash;&gt;-->
-         <!--</ul>'-->
-        <!--</div>-->
-        
     </dialog>
     </div>`,
 
-    // '<img class="bi_photo" ng-swipe-right="skip()" ng-swipe-left="choose(data[counter].gi_title)" src={{data[counter].gi_photo}}> ' +
-    //                 '<h3 class="bi_title" ng-bind=data[counter].gi_title></h3>' +
-    //                 ' <p class="bi_desc" ng-bind=data[counter].gi_desc>>' +
-    //                 '<ul>' +
-    //                 '<li ng-repeat="price in data[counter].prising">{{price.text}} | {{price.cost}}</li></ul>',
     login: '<div class="container start-page"> ' +
         '  <div class=" text-h">            <h1>WishMaster</h1>   ' +
         '     </div>        <div class="row">  <div class="text-desc">    ' +
