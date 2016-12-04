@@ -40,18 +40,72 @@ var tmap = {
     <dialog class="mdl-dialog">
         <h4 class="mdl-dialog__title" ng-bind=data[counter].gi_title></h4>
         <div class="mdl-dialog__content">
-            <ul class="demo-list-icon mdl-list">
-          <li class="mdl-list__item" ng-repeat="price in data[counter].prising">
-            <span class="mdl-list__item-primary-content">
+        <style>
 
-            {{price.text}} |  {{price.cost}}$
-        </span>
-         </ul>'
-        </div>
-        <div class="mdl-dialog__actions">
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}
+.demo-list-action {
+  width: 300px;
+}
+.active-shit{
+  border-bottom: solid 2px red;
+}
+</style>
+
+<div class="demo-card-square mdl-card mdl-shadow--2dp" style="height:auto; margin:0 auto;">
+  <div class="demo-list-action mdl-list">
+    <h4 style="text-align:center;">Current Process</h4>
+    <div class="mdl-list__item active-shit">
+      <span class="mdl-list__item-primary-content">
+        <span>Hiking in Ala-Archa</span>
+      </span>
+      <span class="mdl-list__item-secondary-content">
+        <span>$30</span>
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+          <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+        </label>
+      </span>
+    </div>
+    <div class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        <span>Mountin Biking</span>
+      </span>
+      <span class="mdl-list__item-secondary-content">
+        <span>$20</span>
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+          <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" disabled="true">
+        </label>
+      </span>
+    </div>
+    <div class="mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        <span>Museums in Bishkek</span>
+      </span>
+      <span class="mdl-list__item-secondary-content">
+      <span>$10</span>
+      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+        <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" disabled="true">
+      </label>
+    </span>
+    </div>
+  </div>
+  <div class="mdl-dialog__actions">
             <button type="button" class="mdl-button" ng-click="acceptGuide(data[counter])">Accept</button>
             <button type="button" class="mdl-button close">Exit</button>
         </div>
+</div>
+
+<!--</div>-->
+            <!--&lt;!&ndash;<ul class="demo-list-icon mdl-list">&ndash;&gt;-->
+          <!--&lt;!&ndash;<li class="mdl-list__item" ng-repeat="price in data[counter].prising">&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="mdl-list__item-primary-content">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;{{price.text}} |  {{price.cost}}$&ndash;&gt;-->
+        <!--&lt;!&ndash;</span>&ndash;&gt;-->
+         <!--</ul>'-->
+        <!--</div>-->
+        
     </dialog>
     </div>`,
 
@@ -68,32 +122,7 @@ var tmap = {
         '            <a ng-click=authorize(buttons.traveller)>GUIDE</a>            </div>            <div class="col-xs-10 col-xs-offset-1 tourist">         ' +
         '       <a ng-click=authorize(buttons.traveller)>TOURIST</a>            </div>        </div>    </div>',
     currentProccess: `
-        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp procc_table">
-          <thead>
-            <tr>
-              <th class="mdl-data-table__cell--non-numeric">Material</th>
-              <th>Quantity</th>
-              <th>Unit price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-              <td>25</td>
-              <td>$2.90</td>
-            </tr>
-            <tr>
-              <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-              <td>50</td>
-              <td>$1.25</td>
-            </tr>
-            <tr>
-              <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-              <td>10</td>
-              <td>$2.35</td>
-            </tr>
-          </tbody>
-        </table>
+       
     `
 };
 
