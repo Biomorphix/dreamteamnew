@@ -16,27 +16,15 @@ var tmap = {
                 <h2 class="mdl-card__title-text" ng-bind=data[counter].bi_title></h2>
                  <div class="desc" ng-bind=data[counter].bi_desc>
                      </div>
-                 <button class="skip mdl-button mdl-js-button mdl-button--raised">
+                 <button class="skip mdl-button mdl-js-button mdl-button--raised" ng-click="skip()">
                       Skip
                     </button>
-                    <button class="like mdl-button mdl-js-button mdl-button--raised">
+                    <button class="like mdl-button mdl-js-button mdl-button--raised" ng-click="add(data[counter].bi_title)">
                       Like!
                     </button>  
-                 <div id="p1" class="mdl-progress mdl-js-progress"></div>
+                 <div id="progressbar"></div>
 
-                </div>
-
-        
-               
-
-                 
-            
-               
-                <script>
-                  document.querySelector('#p1').addEventListener('mdl-componentupgraded', function() {
-                    this.MaterialProgress.setProgress(44);
-                  });
-                </script>
+                </div>                 
           
             </div>`,
     guideProfile: `<div class="demo-card-square mdl-card mdl-shadow--2dp">

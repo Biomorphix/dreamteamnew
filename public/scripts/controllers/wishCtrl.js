@@ -23,10 +23,11 @@ angular.module('app')
         $scope.counter = 0;
 
         $scope.add = function () {
-
             $scope.user.bi_count += 1;
             console.log('add');
-            $('#statusBar').removeClass('is-lowest-value').val($scope.user.bi_count * 20);
+            $( "#progressbar" ).progressbar({
+                value: $scope.user.bi_count * 20
+            });
             if($scope.user.bi_count == 5) {
                 $state.go('guide_profile');
             } else {

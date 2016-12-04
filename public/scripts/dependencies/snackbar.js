@@ -55,7 +55,6 @@
     });
 
     $.snackbar = function(options) {
-
         if (isset(options) && options === Object(options)) {
             var $snackbar;
 

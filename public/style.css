@@ -124,3 +124,10 @@ h2{
     float: right;
 }
 
+#progressbar {
+	
+}
+
+.ui-progressbar-value {
+	background: #3949AB;
+}
