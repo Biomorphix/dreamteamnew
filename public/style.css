@@ -12,7 +12,7 @@ html, body{
 	padding: 0;
 	background-color: #fff;
 	width: 100%;
-	height: 628px;
+	/*height: 628px;*/
 	color: #000;
 	font-family: 'Roboto', sans-serif;
 }
@@ -36,6 +36,7 @@ h2{
 	text-align: center;
 	margin: 0;
 	font-size: 20px;
+	display: block;
 }
 
 .demo-card-square {
@@ -75,6 +76,7 @@ h2{
 	height: 100%;
 }
 .desc{
+	float: left;
 	margin-left: 20px;
 	color: #333;
 	margin-bottom: 20px;
@@ -89,14 +91,17 @@ h2{
     height: 100%;
 }
 #progressbar {
-	position: relative;
-	top: 11px;
+	position: absolute;
+	bottom: 0px;
+	display: none;
 }
 
 .ui-progressbar-value {
+	float: left;
 	background: #3949AB;
 }
 .skip{
+	float: left;
 	margin-left: 50px;
 	width: 100px;
 	color: #fff;
@@ -117,13 +122,20 @@ h2{
 	float: left;
 }
 .ico-star{
-	width: 24px;
-	height: 24px;
-	background-image: url(/star.png);
 	display: inline-block;
 	float: left;
 	margin-top: 21px;
 	margin-left: 213px;
+}
+.ico-star img{
+	display: inline-block;
+	float: left;
+}
+.ico-star p{
+	display: inline-block;
+	float: left;
+	padding: 0;
+	margin: 0;
 }
 .rait{
 	font-size: 20px;

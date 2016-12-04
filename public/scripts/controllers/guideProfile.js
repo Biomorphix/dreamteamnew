@@ -20,7 +20,7 @@ angular.module('app')
                 }
             ]
         },{
-            gi_photo: "./img/3.jpg",
+            gi_photo: "./pic_gi/3.jpg",
             gi_title: "Azalia",
             gi_desc: "Azalia know everything about Kyrgyz traditions!",
             bi: ["National drinks", "Yurt camp"],

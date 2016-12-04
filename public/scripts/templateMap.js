@@ -12,7 +12,7 @@ var tmap = {
             
             <div class="demo-card-square mdl-card mdl-shadow--2dp">
                 <div class="mdl-card--expand">
-                <img class="bi_photo" height="360px" ng-swipe-right="skip()" ng-swipe-left="add(data[counter].bi_title)" src={{data[counter].bi_photo}}>
+                <img class="bi_photo" height="417px" ng-swipe-right="skip()" ng-swipe-left="add(data[counter].bi_title)" src={{data[counter].bi_photo}}>
                 <h2 class="mdl-card__title-text" ng-bind=data[counter].bi_title></h2>
                  <div class="desc" ng-bind=data[counter].bi_desc>
                      </div>
@@ -29,10 +29,10 @@ var tmap = {
             </div>`,
     guideProfile: `<div class="demo-card-square mdl-card mdl-shadow--2dp">
         <div class="mdl-card--expand">
-        <img class="bi_photo" height="360px" ng-swipe-right="skip()" ng-swipe-left="choose(data[counter].gi_title)" src={{data[counter].gi_photo}}>
+        <img class="bi_photo" height="417px" ng-swipe-right="skip()" ng-swipe-left="choose(data[counter].gi_title)" src={{data[counter].gi_photo}}>
         <h2 class="mdl-card__title-text" ng-bind=data[counter].gi_title></h2>
 
-        <div class="ico-star"></div><p class="rait">&nbsp31</p>
+        <div class="ico-star"><img src="star.png"/><p class="rait">&nbsp31</p></div>
           
            <div class="mdl-card__supporting-text" ng-bind=data[counter].gi_desc>
              </div>
@@ -42,7 +42,7 @@ var tmap = {
                   <span class="mdl-list__item-primary-content">
                       {{price.text}} |  {{price.cost}}$
                   </span>
-         </ul>
+              </ul>
 
         </div>
 

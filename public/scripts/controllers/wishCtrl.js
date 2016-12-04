@@ -4,15 +4,15 @@ angular.module('app')
                 bi_photo: "./pic_bi/bike.jpg",
                 bi_title: "Mountain biking",
                 bi_desc: "Whant to have an extreme journey? Ride couple of hours on the mountain trails"
-             }, {
-                bi_photo: "./pic_bi/food.png",
-                bi_title: "National food",
-                bi_desc: "Explore traditions and taste national food."
-             },
+             }
+                //bi_photo: "./pic_bi/food.jpg",
+                // bi_title: "National food",
+                // bi_desc: "Explore traditions and taste national food."
+             ,
              {
                 bi_photo: "./pic_bi/rafting.jpg",
                 bi_title: "Rafting",
-                bi_desc: "Test yourself on the water!"
+                bi_desc: "Test yourself on the water!adsdadasdasdasdasdasd"
              },
              {
                 bi_photo: "./pic_bi/horse.jpg",
@@ -35,7 +35,7 @@ angular.module('app')
                 bi_desc: "Explore national sport games. Be part of exciting competitions."
              },
              {
-                bi_photo: "./pic_bi/alpinism.jpg",
+                bi_photo: "./pic_bi/aplinism.jpg",
                 bi_title: "Alpinism",
                 bi_desc: "Try yourself on climbing in mountains."
              }];
